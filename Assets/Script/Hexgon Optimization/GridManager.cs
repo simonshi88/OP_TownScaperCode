@@ -43,8 +43,8 @@ public class GridManager : MonoBehaviour
     {
         CreateSingleton();
 
-        ringCount = TransmitParameter.Instance.ring;
-        Floor = TransmitParameter.Instance.floor;
+        //ringCount = TransmitParameter.Instance.ring;
+        //Floor = TransmitParameter.Instance.floor;
 
         grid = new Grid(ringCount, outerRadius, Floor, Height);
 

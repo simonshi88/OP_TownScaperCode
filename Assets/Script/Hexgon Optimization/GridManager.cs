@@ -162,10 +162,10 @@ public class GridManager : MonoBehaviour
             return;
         }
 
-        //foreach (var vertex in vertices)
-        //{
-        //    Gizmos.DrawSphere(vertex.Position, 0.1f);
-        //}
+        foreach (var vertex in vertices)
+        {
+            Gizmos.DrawSphere(vertex.Position, 0.1f);
+        }
 
         //foreach (var vertex in verticesAll)
         //{
@@ -183,26 +183,41 @@ public class GridManager : MonoBehaviour
         //}
 
 
-        for (int j = 0; j < subQuads.Count; j++)
-        {
-            var quad = subQuads[j];
+        //for (int j = 0; j < subQuads.Count; j++)
+        //{
+        //    var quad = subQuads[j];
 
-            //Gizmos.color = Color.yellow;
-            //Gizmos.DrawSphere(quad.Edges[0].Vertices.ToArray()[0].Position, 0.2f);
+        //    Gizmos.color = Color.yellow;
+        //    //Gizmos.DrawSphere(quad.Edges[0].Vertices.ToArray()[0].Position, 0.5f);
 
-            //for (int i = 0; i < quad.Edges.Count; i++)
-            //{               
-            //    var edge = quad.Edges[i];
-            //    var edge_next = quad.Edges[(i +1) % quad.Edges.Count];
-            //    Gizmos.color = Color.cyan;
-            //    Gizmos.DrawLine(edge.Vertices.ToArray()[0].Position, edge.Vertices.ToArray()[1].Position);
-            //    //Gizmos.color = Color.red;
-            //    //Gizmos.DrawRay(new Ray(edge.Vertices.ToArray()[0].Position, edge.Vertices.ToArray()[1].Position- edge.Vertices.ToArray()[0].Position));
-            //    //GUI.color = Color.yellow;
-            //    //Handles.Label(edge.Vertices.ToArray()[0].Position, edge.Vertices.ToArray()[0].Position.ToString());
-            //    //Handles.Label(edge.Vertices.ToArray()[1].Position, edge.Vertices.ToArray()[1].Position.ToString());
-            //}
-        }
+        //    for (int i = 0; i < quad.Edges.Count; i++)
+        //    {
+        //        var edge = quad.Edges[i];
+        //        var edge_next = quad.Edges[(i + 1) % quad.Edges.Count];
+        //        Gizmos.color = Color.cyan;
+        //        Gizmos.DrawLine(edge.Vertices.ToArray()[0].Position, edge.Vertices.ToArray()[1].Position);
+
+
+        //        //Gizmos.color = Color.red;
+        //        //Gizmos.DrawRay(new Ray(edge.Vertices.ToArray()[0].Position, edge.Vertices.ToArray()[1].Position- edge.Vertices.ToArray()[0].Position));
+        //        //GUI.color = Color.yellow;
+        //        //Handles.Label(edge.Vertices.ToArray()[0].Position, edge.Vertices.ToArray()[0].Position.ToString());
+        //        //Handles.Label(edge.Vertices.ToArray()[1].Position, edge.Vertices.ToArray()[1].Position.ToString());
+        //    }
+        //}
+
+
+        //foreach (var tri in triangles)
+        //{
+        //    for (int i = 0; i < tri.Edges.Count; i++)
+        //    {
+        //        var edge = tri.Edges[i];
+        //        Gizmos.color = Color.red;
+        //        Gizmos.DrawLine(edge.Vertices.ToArray()[0].Position, edge.Vertices.ToArray()[1].Position);
+
+        //    }
+        //}
+
 
         //foreach (var quad in quads)
         //{
@@ -219,25 +234,26 @@ public class GridManager : MonoBehaviour
         //for (int j = 0; j < cubes.Count; j++)
         //{
         //    var cube = cubes[j];
+
         //    GUI.color = Color.yellow;
-        //    Handles.Label(cube.CenterPoint, cube.Bit.ToString());
-        //    //for (int i = 0; i < cube.Edges.Count; i++)
-        //    //{
-        //    //    var edge = cube.Edges[i];
-
-        //    //    Gizmos.color = Color.cyan;
-        //    //    Gizmos.DrawLine(edge.Vertices3.ToArray()[0].worldPosition, edge.Vertices3.ToArray()[1].worldPosition);
-
-        //    //}
-
-        //    foreach (var vertex in cube.Vertices)
+        //    //Handles.Label(cube.CenterPoint, cube.Bit.ToString());
+        //    for (int i = 0; i < cube.Edges.Count; i++)
         //    {
-        //        if (vertex.IsActive)
-        //            Gizmos.color = Color.red;
-        //        else
-        //            Gizmos.color = Color.gray;
-        //        Gizmos.DrawSphere(vertex.worldPosition, 0.3f);
+        //        var edge = cube.Edges[i];
+
+        //        Gizmos.color = Color.cyan;
+        //        Gizmos.DrawLine(edge.Vertices3.ToArray()[0].worldPosition, edge.Vertices3.ToArray()[1].worldPosition);
+
         //    }
+
+        //    //foreach (var vertex in cube.Vertices)
+        //    //{
+        //    //    if (vertex.IsActive)
+        //    //        Gizmos.color = Color.red;
+        //    //    else
+        //    //        Gizmos.color = Color.gray;
+        //    //    Gizmos.DrawSphere(vertex.worldPosition, 0.3f);
+        //    //}
         //}
 
 

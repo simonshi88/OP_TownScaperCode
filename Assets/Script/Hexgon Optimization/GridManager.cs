@@ -19,7 +19,7 @@ public class GridManager : MonoBehaviour
     public int Floor = 3;
     public float Height = 3f;
 
-    public GameObject lineRenderer;
+    public GameObject LineRenderer;
 
     public Transform add;
     public Transform subtract;
@@ -71,7 +71,7 @@ public class GridManager : MonoBehaviour
 
         foreach (var subQuad in subQuads)
         {            
-            var line = Instantiate(lineRenderer, gameObject.transform);
+            var line = Instantiate(LineRenderer, gameObject.transform);
             var render = line.GetComponent<LineRenderer>();
 
             grid.CreateLineRender(subQuad, render);
@@ -162,10 +162,10 @@ public class GridManager : MonoBehaviour
             return;
         }
 
-        foreach (var vertex in vertices)
-        {
-            Gizmos.DrawSphere(vertex.Position, 0.1f);
-        }
+        //foreach (var vertex in vertices)
+        //{
+        //    Gizmos.DrawSphere(vertex.Position, 0.5f);
+        //}
 
         //foreach (var vertex in verticesAll)
         //{

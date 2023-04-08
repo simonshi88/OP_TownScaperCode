@@ -592,15 +592,15 @@ public class Grid
 
 
 
-    public void CreateLineRender(SubQuad quad, LineRenderer lineRenderer)
+    public void CreateLineRender(SubQuad quad, LineRenderer LineRenderer)
     {  
-        lineRenderer.useWorldSpace = true;
+        LineRenderer.useWorldSpace = true;
               
         List<Vertex> vertices = quad.Vertices;
-        lineRenderer.positionCount = vertices.Count;
+        LineRenderer.positionCount = vertices.Count;
         for (int i = 0; i < vertices.Count; i++)
         {
-            lineRenderer.SetPosition(i, vertices[i].Position);
+            LineRenderer.SetPosition(i, vertices[i].Position);
         }
     }
 }
